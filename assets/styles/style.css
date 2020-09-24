@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    width: 80%;
+    border: 1px solid black;
+    margin: auto;
+}
+
+.block-news {
+    border: 1px solid red;
+    margin: 20px;
+    width: 30%;
+    padding: 15px;
+}
+
+.title {
+    height: 100px;
+    background-color: aqua;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+
+header ul li {
+   display: flex;
+   align-items: center;
+}
+
+.active {
+    background-color: blueviolet;
+}
+
+header {
+    background-color: aqua;
+    height: 50px;
+    justify-content: space-around;
+}

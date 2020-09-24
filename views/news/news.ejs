@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%=obj.title %></title>
+    <link rel="stylesheet" href="../assets/styles/style.css">
+  </head>
+  <body>
+    <%- include('../layout/header.ejs', {params: 'news'}) %>
+    <div class="container">
+   <!-- <p><%=obj.news.title %></p>
+   <h3>
+    <%=obj.news.description %> -->
+
+    <% for(var i=0; i<obj.news.length;i++) {%>
+      <%- include("card-news.ejs", obj.news[i])%>
+    <%} %>
+   </h3>
+</div>
+<script src="js/news.js"></script>
+  </body>
+</html>
